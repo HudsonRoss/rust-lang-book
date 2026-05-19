@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, cargo (with cargo run)!");
+    println!("Hello, cargo (with cargo build --release)!");
 }
