@@ -17,4 +17,6 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed: {guess}");
+
+    println!("The secret number is: {secret_number}");
 }
