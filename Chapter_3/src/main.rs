@@ -1,14 +1,15 @@
 fn main() {
 
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
+    //a shadowing example
 
-    let mut x = 5;
+    let x = 5;
 
-    let y = THREE_HOURS_IN_SECONDS;
+    let x = x + 1;
+
+    {
+        let x = x + 2; 
+        println!("The value of x in the inner scope is: {x}");
+    }
 
     println!("The value of x is: {x}");
-    x = 6;
-    println!("The value of x is {x}");    
-
-    println!("There are {y} seconds in 3 hours.");
 }
