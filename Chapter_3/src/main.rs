@@ -1,15 +1,11 @@
 fn main() {
 
-    //a shadowing example
+    //a further shadowing example
 
-    let x = 5;
+    let spaces = "    ";
+    let spaces = spaces.len();
 
-    let x = x + 1;
+    println!("The value of spaces is: {spaces}");
 
-    {
-        let x = x + 2; 
-        println!("The value of x in the inner scope is: {x}");
-    }
-
-    println!("The value of x is: {x}");
+    //Notice in this example, when we shadowed, we did NOT even keep the same TYPE of variable. Very cool. 
 }
