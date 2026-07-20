@@ -1,11 +1,13 @@
 fn main() {
-    let x: (i32, f64, u8) = (500, 6.4, 1);
+    //Remember, in Rust, arrays must have a fixed length.
 
-    let _five_hundred = x.0;
+    let a = [1, 2, 3, 4, 5];
 
-    let _six_point_four = x.1;
+    println!("{}", a[2]);
 
-    let one = x.2;
+    //To be more explicit about the type, do like the following:
 
-    println!("{one}");
+    let b: [i32; 5] = [6, 7, 8, 9, 10]; // as you see, the type is i32, and it is 5 elements long
+
+    println!("{}", b[4]);
 }
