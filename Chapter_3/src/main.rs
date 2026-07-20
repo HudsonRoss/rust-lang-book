@@ -1,11 +1,11 @@
 fn main() {
+    let x: (i32, f64, u8) = (500, 6.4, 1);
 
-    //a further shadowing example
+    let _five_hundred = x.0;
 
-    let mut spaces = "    ";
-    let spaces = spaces.len();
+    let _six_point_four = x.1;
 
-    println!("The value of spaces is: {spaces}");
+    let one = x.2;
 
-    //Does not compile... the MUT keyword will prevent type switching...
+    println!("{one}");
 }
