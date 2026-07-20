@@ -1,13 +1,7 @@
 fn main() {
-    //Remember, in Rust, arrays must have a fixed length.
+    another_function(5);
+}
 
-    let a = [1, 2, 3, 4, 5];
-
-    println!("{}", a[2]);
-
-    //To be more explicit about the type, do like the following:
-
-    let b: [i32; 5] = [6, 7, 8, 9, 10]; // as you see, the type is i32, and it is 5 elements long
-
-    println!("{}", b[4]);
+fn another_function(x: i32) {
+    println!("The value of x is: {x}");
 }
