@@ -1,31 +1,22 @@
 fn main() {
     /* Statements and Expressions:
 
-    STATEMENTS
-    -   Statements are instructions that perform some action and do not return a 
-        value.
-    -   Expressions evaluate to a resultant value.
+    EXPRESSIONS
 
-    ###Examples###
+    Unlike statements, expressions evaluate to value and return it.
 
-    `let y = 6;` is a *statement*; it is performing the action of assignment, 
-    and so is:
-        `fn main() {
-            let y = 6; 
-        }`
+    (Corollary - function definitions are statements, yet function calls are 
+    typically expressions)
 
-    Why? Neither bit of code returns a value, even though both of them are
-    doing something.
+    The math operation e.g. `5 + 6` is an expression, as it evaluates to `11`.
 
-
-    `let x = (let y = 6);`
-
-    The statement `let y = 6` does not return a value, so there is not to bind
-    x in the `let x =` fragment to. As a result, we will get compile time 
-    errors.
-
-    
-
+    Consider the block below... 
     */
+
+    let y = {
+        let x = 3;  //statement, doesn't evaluate, needs semi-colon
+        x + 1       //note: No semi-colon here, this is fragment is an expression!
+    };              //this whole block does an assignment action, but returns
+                    // nothing. Hence, it is a statement, ending in a semicolon
 }
 
