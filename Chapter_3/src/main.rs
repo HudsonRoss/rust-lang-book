@@ -5,5 +5,8 @@ fn main() {
 }
 
 fn plus_one(x: i32) -> i32 {
-    x + 1 // <-- works even without the semicolon, but if we add a semicolon....
+    x + 1; // <-- DOES NOT COMPILE, the semicolon makes it return no value
+           // thereby disagreeing with the function signature.
+
+           
 }
