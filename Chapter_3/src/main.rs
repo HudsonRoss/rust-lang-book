@@ -1,29 +1,13 @@
 fn main() {
-    /* Statements and Expressions:
+    let x = five();
 
-    EXPRESSIONS
-
-    Unlike statements, expressions evaluate to value and return it.
-
-    (Corollary - function definitions are statements, yet function calls are 
-    typically expressions)
-
-    The math operation e.g. `5 + 6` is an expression, as it evaluates to `11`.
-
-    Consider the block below... 
-    */
-
-    let result = expression_x();
-
-    println!("The value of x is: {result}");
+    println!("The value of x is: {x}");
 }
 
-fn expression_x() -> i32 {
-    {
-        let x = 3;  //statement, doesn't evaluate, needs semi-colon
-        x + 1       //note: No semi-colon here, this is fragment is an expression!
-    }               //commenting out the assignment to y makes this a statement
-                    //so I should not need a semi-colon on line 19
+fn five() -> i32 {
+    5
 
-    //This expression compiles, and returns `4`.    
+    /* There are no function calls, macros, or even let statements in the five function—just the number 5 by itself. 
+    That’s a perfectly valid function in Rust. Note that the function’s return type is specified too, as -> i32. */
+    
 }
