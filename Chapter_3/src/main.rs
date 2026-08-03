@@ -1,11 +1,13 @@
 fn main() {
-    let mut number = 3;
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
 
-    while number != 0 {
-        println!("{number}!");
+    while index < 5 {
+        println!("the value is: {}", a[index]);
 
-        number -= 1;
+        index += 1 //I left the semicolon off because this is an expression.
     }
-
-    println!("LIFTOFF!!!")
 }
+/*
+    works, but error prone because you are forced to track the index.
+*/
